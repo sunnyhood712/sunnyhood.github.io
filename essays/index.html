@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>随心所想 · 散文集</title>
+  <meta name="description" content="小草的个人散文集" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+      color: #3f2f24;
+      background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+      min-height: 100vh;
+    }
+
+    .container { max-width: 760px; margin: 0 auto; padding: 40px 20px; }
+
+    header { padding: 50px 0 20px; }
+
+    h1 { font-size: 2.2rem; margin: 0 0 10px; color: #7c2d12; }
+
+    .subtitle { color: #9a6b4f; font-size: 1.05rem; }
+
+    .back { margin-bottom: 20px; }
+
+    a { color: #c2410c; text-decoration: none; }
+    a:hover { text-decoration: underline; color: #9a3412; }
+
+    section {
+      background: rgba(255, 251, 245, 0.9);
+      padding: 28px;
+      margin: 20px 0;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(180, 83, 9, 0.10);
+      border: 1px solid #fde6c8;
+    }
+
+    h2 { margin-top: 0; color: #9a3412; }
+
+    .article-list { list-style: none; padding: 0; margin: 0; }
+
+    .article-list li {
+      padding: 14px 0;
+      border-bottom: 1px solid #fde6c8;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .article-list li:last-child { border-bottom: none; }
+
+    .date { color: #a16207; font-size: 0.9rem; }
+
+    footer { text-align: center; color: #a16207; padding: 30px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="back"><a href="../">← 返回个人主页</a></p>
+      <h1>随心所想 · 散文集</h1>
+      <p class="subtitle">一个七零后阿姨的日常思考与生活记录</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>文章列表</h2>
+        <ul class="article-list">
+          <li>
+            <a href="article1.html">第一篇：种菜教会我的事</a>
+            <span class="date">2026-10-02</span>
+          </li>
+
+          <!-- 以后新文章加在这里 -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 小草. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
