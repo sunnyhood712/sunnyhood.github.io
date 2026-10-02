@@ -3,10 +3,144 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的个人网站</title>
+  <title>随心所想</title>
+  <meta name="description" content="散文" />
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      color: #3f2f24;
+      background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+      min-height: 100vh;
+    }
+
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+
+    header { padding: 60px 0 30px; }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fed7aa;
+      display: block;
+      margin-bottom: 18px;
+      background: #ffedd5;
+    }
+
+    h1 { font-size: 2.4rem; margin: 0 0 10px; color: #7c2d12; }
+    .subtitle { color: #9a6b4f; font-size: 1.1rem; }
+
+    section {
+      background: rgba(255, 251, 245, 0.9);
+      padding: 28px;
+      margin: 20px 0;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(180, 83, 9, 0.10);
+      border: 1px solid #fde6c8;
+    }
+
+    h2 { margin-top: 0; color: #9a3412; }
+
+    a { color: #c2410c; text-decoration: none; }
+    a:hover { text-decoration: underline; color: #9a3412; }
+
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: #c2410c;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(194, 65, 12, 0.25);
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: #9a3412;
+      color: #fff;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .project {
+      padding: 14px 0;
+      border-bottom: 1px solid #fde6c8;
+    }
+
+    .project:last-child { border-bottom: none; }
+
+    .project-img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 10px;
+      display: block;
+    }
+
+    footer { text-align: center; color: #a16207; padding: 30px 0; }
+  </style>
 </head>
 <body>
-  <h1>你好，我是小草</h1>
-  <p>我的个人网站上线了！</p>
+  <div class="container">
+    <header>
+      <img src="avatar.jpg" alt="我的头像" class="avatar" />
+
+      <h1>一个七零后阿姨，肉体疲倦，精神自由 👋</h1>
+      <p class="subtitle"> 服装工作者 / 种菜爱好者 / 终身学习者</p>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>关于我</h2>
+        <p>我是一名位于福建的开发者，喜欢用随意的文字记录日常感想，进入网站与我一起排遣内心的精神垃圾。</p>
+      </section>
+
+      <section id="projects">
+        <h2>项目</h2>
+
+        <div class="project">
+          <h3>
+            <a href="https://example.com/essays" target="_blank" rel="noopener noreferrer">
+              项目一：我的散文集
+            </a>
+          </h3>
+          <p>由生活点滴启发的思考，通过文章抒发共鸣</p>
+
+          <a class="btn" href="https://example.com/essays" target="_blank" rel="noopener noreferrer">
+            进入我的散文集 →
+          </a>
+        </div>
+
+        <div class="project">
+          <h3>
+            <a href="https://example.com/portfolio" target="_blank" rel="noopener noreferrer">
+              项目二：我的作品集
+            </a>
+          </h3>
+          <p>收录我的服装作品、日常创作与生活记录</p>
+
+          <a class="btn" href="https://example.com/portfolio" target="_blank" rel="noopener noreferrer">
+            进入我的作品集 →
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>联系我</h2>
+        <p>邮箱：<a href="mailto:you@example.com">you@example.com</a></p>
+        <p>GitHub：<a href="https://github.com/yourname">github.com/yourname</a></p>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 小草. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
