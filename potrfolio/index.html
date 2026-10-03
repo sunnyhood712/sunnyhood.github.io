@@ -1,1 +1,89 @@
 
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的作品集</title>
+  <meta name="description" content="小草的服装作品与日常创作" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.8;
+      color: #3f2f24;
+      background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+      min-height: 100vh;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+    header { padding: 50px 0 20px; }
+    h1 { font-size: 2.2rem; margin: 0 0 10px; color: #7c2d12; }
+    .subtitle { color: #9a6b4f; font-size: 1.05rem; }
+    .back { margin-bottom: 20px; }
+    a { color: #c2410c; text-decoration: none; }
+    a:hover { text-decoration: underline; color: #9a3412; }
+    section {
+      background: rgba(255, 251, 245, 0.9);
+      padding: 28px;
+      margin: 20px 0;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(180, 83, 9, 0.10);
+      border: 1px solid #fde6c8;
+    }
+    h2 { margin-top: 0; color: #9a3412; }
+    .work-list { list-style: none; padding: 0; margin: 0; }
+    .work-list li {
+      padding: 18px 0;
+      border-bottom: 1px solid #fde6c8;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .work-list li:last-child { border-bottom: none; }
+    .work-thumb {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #fed7aa;
+      background: #ffedd5;
+      flex-shrink: 0;
+    }
+    .work-info { flex: 1; min-width: 200px; }
+    .work-info h3 { margin: 0 0 6px; font-size: 1.2rem; }
+    .work-info h3 a { color: #9a3412; }
+    .work-info p { margin: 0 0 8px; color: #6b4f3a; }
+    .date { color: #a16207; font-size: 0.9rem; }
+    footer { text-align: center; color: #a16207; padding: 30px 0; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="back"><a href="../">← 返回个人主页</a></p>
+      <h1>我的作品集</h1>
+      <p class="subtitle">服装作品 · 日常创作 · 生活记录</p>
+    </header>
+    <main>
+      <section>
+        <h2>作品列表</h2>
+        <ul class="work-list">
+          <li>
+            <img src="work1.jpg" alt="手工刺绣上衣" class="work-thumb" />
+            <div class="work-info">
+              <h3><a href="work1.html">手工刺绣上衣</a></h3>
+              <p>用旧衣改造，加入植物刺绣，让衣服重新有了生命。</p>
+              <span class="date">2026-10-02</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      © 2026 小草. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
