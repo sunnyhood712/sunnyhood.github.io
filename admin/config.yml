@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "essays"
+    label: "散文集"
+    folder: "essays"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime"}
+      - {label: "正文", name: "body", widget: "markdown"}
+  - name: "portfolio"
+    label: "作品集"
+    folder: "portfolio"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "作品名称", name: "title", widget: "string"}
+      - {label: "完成日期", name: "date", widget: "datetime"}
+      - {label: "作品描述", name: "body", widget: "markdown"}
