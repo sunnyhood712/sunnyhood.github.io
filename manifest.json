@@ -1,0 +1,21 @@
+{
+  "name": "随心所想",
+  "short_name": "随心所想",
+  "start_url": "/editor.html",
+  "display": "standalone",
+  "background_color": "#fff7ed",
+  "theme_color": "#c2410c",
+  "description": "小草的散文集与写作台",
+  "icons": [
+    {
+      "src": "avatar.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "avatar.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
